@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#004C99"
+    android:layout_width="match_parent" android:layout_height="90dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="210dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/unif"
+       />
+
+
+    <ImageView
+        android:layout_width="650dp"
+        android:layout_marginStart="210dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/white_gradient"
+   />
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:id="@+id/textView_Collapsed_1"
+            style="@style/TextAppearance.Compat.Notification.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nueva Notification"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/textView_Collapsed_2"
+            style="@style/TextAppearance.Compat.Notification.Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click para ver"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

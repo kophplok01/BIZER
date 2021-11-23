@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+    android:background="#7A474747"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7A474747">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#7A474747"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/topline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/popup_descripcion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/popup_title"
+                android:layout_width="287dp"
+                android:layout_height="45dp"
+                android:background="@drawable/pop_et_bg"
+                android:hint="Titulo"
+                android:maxLength="30"
+                android:lines="1"
+                android:textColor="#fff"
+                android:inputType="textPersonName" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                app:civ_border_color="@color/transparent"
+                app:civ_border_width="2dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/popup_user_image"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:src="@drawable/profiledp"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+
+        <EditText
+            android:id="@+id/popup_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/pop_et_bg"
+            android:ems="10"
+            android:maxLength="40"
+            android:minLines="1"
+            android:maxLines="2"
+            android:textColor="#fff"
+            android:hint="Subtitulo"
+            android:inputType="textCapSentences|textMultiLine"
+           />
+
+
+        <View
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+
+        <EditText
+            android:layout_marginTop="13dp"
+            android:id="@+id/popup_descripcion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pop_et_bg"
+            android:ems="10"
+            android:textColor="#fff"
+            android:maxLength="230"
+            android:hint="Descripcion"
+            android:maxLines="5"
+            android:minLines="1"
+            android:inputType="textCapSentences|textMultiLine"
+            />
+
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/popup_img"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@color/transparent"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/introtextpop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agregar imagen +"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/popup_img"
+                app:layout_constraintStart_toStartOf="@+id/popup_img"
+                app:layout_constraintTop_toTopOf="@+id/popup_img" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width                       ="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/popup_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/carreras_btn_style"
+                android:padding="12dp"
+                android:text="Publicar"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                 />
+
+            <ProgressBar
+                android:id="@+id/popup_progressBar2"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorPrimary"
+                android:indeterminateTintMode="src_atop"
+                android:padding="4dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/popup_add"
+                app:layout_constraintEnd_toEndOf="@+id/popup_add"
+                app:layout_constraintHorizontal_bias="0.529"
+                app:layout_constraintStart_toStartOf="@+id/popup_add"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

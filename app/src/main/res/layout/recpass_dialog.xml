@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="420dp"
+            android:background="@drawable/fdss"
+            android:orientation="vertical"
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:src="#7A474747"/>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginHorizontal="15dp"
+                android:background="@color/transparent"
+                >
+
+
+
+                <ImageView
+                    android:layout_marginTop="15dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/candado" />
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/textViewNamees"
+                    android:gravity="center_horizontal"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Olvidaste tu contraseña?" />
+
+
+
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/textViewesc"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Introduce tu dirección de correo electrónico y te enviaremos un link para que la modifiques" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/et_bg"
+                    android:fontFamily="sans-serif-light"
+                    android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+                    android:textSize="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:hint="  Correo electrónico"
+                    android:inputType="textWebEmailAddress"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/recover_mail"
+                    android:textColor="#fff"/>
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+
+                    android:layout_marginTop="25dp">
+
+
+                    <Button
+                        android:id="@+id/etRecpass"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_gradient_style"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Enviar Link"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ProgressBar
+                        android:id="@+id/rec_progress"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminateTint="@color/colorPrimary"
+                        android:indeterminateTintMode="src_atop"
+                        app:layout_constraintBottom_toBottomOf="@+id/etRecpass"
+                        app:layout_constraintEnd_toEndOf="@+id/etRecpass"
+                        app:layout_constraintStart_toStartOf="@+id/etRecpass"
+                        app:layout_constraintTop_toTopOf="@+id/etRecpass" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

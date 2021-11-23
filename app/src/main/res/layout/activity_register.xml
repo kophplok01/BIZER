@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fds"
+    tools:context=".Activities.RegisterActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#7A474747" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/acpm73"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tguia"
+            android:text="Cargando..."
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 %"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:id="@+id/text_view63"
+            android:layout_centerHorizontal="true" />
+
+        <ProgressBar
+            android:layout_marginHorizontal="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar63"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/mplan"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:text="Nuevo Usuario"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:layout_marginLeft="30dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+          <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/regUserPhoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:src="@drawable/prof"
+            app:civ_border_color="@color/transparent"
+            app:civ_border_width="2dp"
+             android:layout_marginHorizontal="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/cechkedp"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:src="@drawable/subm"
+             app:civ_border_color="@color/transparent"
+             app:civ_border_width="2dp"
+             app:layout_constraintBottom_toBottomOf="@+id/regUserPhoto"
+             app:layout_constraintEnd_toEndOf="@+id/regUserPhoto"
+             app:layout_constraintStart_toStartOf="@+id/regUserPhoto"
+             app:layout_constraintTop_toTopOf="@+id/regUserPhoto"/>
+
+
+
+            <ProgressBar
+                android:indeterminateTint="@color/colorPrimary"
+                android:indeterminateTintMode="src_atop"
+                android:id="@+id/userpbar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/regUserPhoto"
+                app:layout_constraintEnd_toEndOf="@+id/regUserPhoto"
+                app:layout_constraintStart_toStartOf="@+id/regUserPhoto"
+                app:layout_constraintTop_toTopOf="@+id/regUserPhoto" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Nro de Cedula"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/et_bg"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:inputType="number"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:paddingRight="15dp"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/regName"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Correo electrónico"
+            android:textSize="13sp"
+            android:textAllCaps="true"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/et_bg"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:inputType="textWebEmailAddress"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:paddingRight="15dp"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/regMail"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Contraseña"
+            android:textSize="13sp"
+            android:textAllCaps="true"
+            android:textColor="#fff"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/et_bg"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="13dp"
+            android:inputType="textVisiblePassword"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:paddingRight="15dp"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/regPassword"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Confirmar contraseña"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/et_bg"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:inputType="textVisiblePassword"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:paddingRight="15dp"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/regPassword2"
+            android:textColor="#fff"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <Button
+                android:id="@+id/regBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="43dp"
+                android:background="@drawable/btn_gradient_style"
+                android:text="Registrarse"
+                android:textColor="#fff"
+                android:layout_marginHorizontal="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <ProgressBar
+                android:indeterminateTint="@color/colorPrimary"
+                android:indeterminateTintMode="src_atop"
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/regBtn"
+                app:layout_constraintEnd_toEndOf="@+id/regBtn"
+                app:layout_constraintStart_toStartOf="@+id/regBtn"
+                app:layout_constraintTop_toTopOf="@+id/regBtn" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

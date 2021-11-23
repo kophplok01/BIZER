@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Derecho">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_marginTop="95dp"
+        android:layout_gravity="center"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:background="@color/transparent"
+        android:id="@+id/preim"/>
+    <TextView
+        android:gravity="center_horizontal"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:id="@+id/amostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_blank_fragment" />
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/precios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_precio_24dp"
+                android:background="@drawable/carreras_btn_style"
+                android:paddingHorizontal="20dp"
+                android:text="Precios   "
+                android:textColor="#fff"/>
+            <View
+                android:layout_width="40dp"
+                android:background="@color/transparent"
+                android:layout_height="1dp"/>
+            <Button
+                android:id="@+id/pemsum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_pemsum_24dp"
+                android:background="@drawable/carreras_btn_style"
+                android:paddingHorizontal="20dp"
+                android:text="Pemsum   "
+                android:textColor="#fff"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mallacu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="66dp"
+                android:drawableRight="@drawable/ic_malla_24dp"
+                android:background="@drawable/carreras_btn_style"
+                android:text="Malla Curricular   "
+                android:textColor="#fff"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginHorizontal="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/infcar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_info_24dp"
+                android:background="@drawable/carreras_btn_style"
+                android:paddingHorizontal="40dp"
+                android:text="Inf. acerca de la carrera   "
+                android:textColor="#fff"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

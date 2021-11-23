@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#7A474747"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="#7A474747"
+                >
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/carnennt"
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textViewNamees"
+                    android:gravity="center_horizontal"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Foto de identificación" />
+
+
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/textViewesc"
+                    android:textSize="15sp"
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Para completar tu registro debes subir una foto de identificación que deberá cumplir con los siguientes requisitos:"/>
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:textSize="15sp"
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1.-La foto deberá ser tomada con la cámara frontal del teléfono."
+                    />
+
+                <TextView
+                    android:layout_marginTop="15dp"
+                    android:textSize="15sp"
+                    android:textColor="#fff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2.-La posición del rostro con respecto a la foto deberá ser central (Horizontal y Verticalmente)."
+                    />
+
+
+
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/etcer"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/btn_gradient_style"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Entendido"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+            </LinearLayout>
+
+
+
+
+</RelativeLayout>

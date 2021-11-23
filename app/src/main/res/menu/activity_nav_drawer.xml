@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio"
+            android:icon="@drawable/iniciodp"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_carreras"
+            android:icon="@drawable/ic_carreraas_24dp"
+            android:title="Carreras" />
+        <item
+            android:id="@+id/nav_calendario"
+            android:icon="@drawable/ic_calendario_24dp"
+            android:title="Calendario academico" />
+        <item
+            android:id="@+id/nav_horarios"
+            android:icon="@drawable/ic_horarios_24dp"
+            android:title="Horarios" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profiledp"
+            android:title="Mi Perfil" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_qrid_24dp"
+            android:title="Mi carnet electrónico " />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/salirdp"
+            android:title="@string/menu_send" />
+    </group>
+
+
+
+</menu>

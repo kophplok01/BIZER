@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+
+
+                <LinearLayout
+                    android:background="#7A3D3D3D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="#7A3D3D3D"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:layout_gravity="left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="¡Aviso!"
+                            android:textColor="#fff"
+                            android:textSize="28sp"/>
+
+                        <View
+                            android:paddingHorizontal="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="290dp"
+                            android:layout_height="2dp"
+                            android:background="#7A3D3D3D"/>
+
+                        <TextView
+                            android:paddingHorizontal="10dp"
+                            android:id="@+id/msj"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="15sp"
+                            android:textColor="#fff"/>
+
+                        <View
+                            android:paddingHorizontal="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="290dp"
+                            android:layout_height="2dp"
+                            android:background="#7A3D3D3D"/>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:text="Volver"
+                                android:id="@+id/bac"
+                                android:textSize="15sp"
+                                android:textAllCaps="false"
+                                android:textColor="#fff"/>
+
+
+
+                            <View
+                                android:layout_width="90dp"
+                                android:layout_height="2dp"
+                                android:background="@color/transparent"/>
+
+                            <Button
+                                android:paddingHorizontal="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:text="Descargar"
+                                android:id="@+id/desca"
+                                android:textSize="15sp"
+                                android:textAllCaps="false"
+                                android:textColor="#fff"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+</RelativeLayout>

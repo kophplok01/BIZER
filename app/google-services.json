@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "526349775298",
+    "firebase_url": "https://unimarnf21.firebaseio.com",
+    "project_id": "unimarnf21",
+    "storage_bucket": "unimarnf21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526349775298:android:045f25ed01c0bdd1",
+        "android_client_info": {
+          "package_name": "tr.xip.unimarnf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526349775298-82k8m17cd7ae7shmbuoc6gnlju4ao41v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tr.xip.unimarnf",
+            "certificate_hash": "3182e50b74efdfa15434181c1c86944ef9cce211"
+          }
+        },
+        {
+          "client_id": "526349775298-36b4gqj3r62o8u0e2oojvce3b3j92fvi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ2ARtRAYOeXkogm386PPSHiXRO1OpvbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526349775298-36b4gqj3r62o8u0e2oojvce3b3j92fvi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

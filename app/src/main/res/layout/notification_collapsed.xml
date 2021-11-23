@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="64dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nueva Notification"
+        android:textColor="@color/colorPrimary"
+        style="@style/TextAppearance.Compat.Notification.Title"
+        android:id="@+id/textView_Collapsed_1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click para ver"
+        android:textColor="@color/colorPrimary"
+        style="@style/TextAppearance.Compat.Notification.Info"
+        android:id="@+id/textView_Collapsed_2"/>
+
+
+</LinearLayout>

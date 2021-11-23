@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/fds"
+    android:layout_height="match_parent"
+    tools:context=".zipy">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="#7A474747"/>
+
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro en dos pasos"
+        android:textColor="#fff"
+        android:id="@+id/ssaa"
+        android:textSize="26sp"/>
+
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/ssaa"
+        android:layout_width="match_parent"
+        android:id="@+id/rto"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_187"/>
+
+
+
+    </LinearLayout>
+
+ <TextView
+     android:layout_marginTop="25dp"
+     android:layout_below="@+id/rto"
+     android:text="Con el fin de asegurar la privacidad de tus datos y evitar el duplicado de cuentas es necesario que para poder registrarte primero verifiques tu número de teléfono."
+     android:textColor="#fff"
+     android:layout_marginHorizontal="15dp"
+     android:textSize="16sp"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/ssaa1"/>
+
+    <TextView
+        android:layout_below="@+id/ssaa1"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Introduzca un numero de teléfono"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:padding="15dp">
+
+        <Spinner
+            android:id="@+id/spinnerCountries"
+            android:layout_width="100dp"
+            android:visibility="gone"
+            android:background="@color/transparent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:gravity="center_horizontal"
+            android:id="@+id/editTextPhone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:hint="4xx xxx xx xx"
+            android:maxLength="10" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:text="Ingresar"
+        android:background="@drawable/carreras_btn_style"
+        android:textColor="#fff" />
+
+</RelativeLayout>
